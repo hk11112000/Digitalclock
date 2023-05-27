@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon/clock.png" type="image/x-icon">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <!-- Bootstrap CSS reference link for toggle button -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Digital Clock | Himanshu Karpe</title>
+</head>
+
+<body>
+    <div class="body">
+        <div class="box">
+            <div class="format td a">24 Hours Format</div>
+            <div class="format th a">12 Hours Format</div>
+            <div class="format digic">Digital Clock | Himanshu Karpe</div>
+            <div class="clock">
+                <div class="container">
+                    <div class="format hours n">00</div>
+                    <div class="format hr n">00</div>
+                    <span class="dot">:</span>
+                    <div class="format minutes n">00</div>
+                    <span class="dot">:</span>
+                    <div class="format seconds n">00</div>
+                    <div class="amPm">**</div>
+                </div>
+                <div class="container2">
+                    <div class="dayDate d">Indian Standard Time</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toggle">
+        <!-- Toggle Button imported from Bootstrap -->
+        <i class="bi bi-toggle-off" id="toggleBtn"></i>
+    </div>
+    <div class="formatStatus">
+        <p class="twelve off"><b style="color: red;">OFF </b> 12 Hours Format</p>
+        <p class="twelve on"><b style="color: green;">ON </b> 12 Hours Format</p>
+    </div>
+    <!-- Html for darkmode -->
+    <div class="darkmode tooltip">
+        <!-- Adding mode icons imported from Bootstrap -->
+        <i class="bi bi-toggle-off" id="sun"></i>
+        <span class="tooltiptext">Dark Mode</span>
+        
+    </div>
+
+    <script src="/JS/index.js"></script>
+    <script src="/JS/functions.js"></script>
+</body>
+
+</html>

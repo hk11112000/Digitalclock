@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+    color: #103;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(120deg, #2e0253, #0b8793);
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: auto;
+    margin-bottom: 20px;
+
+}
+
+.box {
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 400px;
+}
+
+.n {
+    padding: 15px 50px;
+    max-width: 700px;
+    width: 100%;
+    font-size: 50px;
+}
+
+.d {
+    padding: 0 10px;
+    font-size: 30px;
+    background-color: #fff;
+    display: flex;
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 5px 4px 10px #2e0253;
+    justify-content: center;
+    align-items: center;
+}
+/* Display of Element Set to none by default */
+.th {
+    display: none;
+}
+.on{
+    display: none;
+}
+.hr {
+    display: none;
+}
+/* Css to toggle the display of the Element */
+.displayContent {
+    display: block;
+}
+
+.hideContent {
+    display: none;
+}
+/* ======End of the Session====== */
+.format {
+    background-color: #fff;
+    align-items: center;
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 5px 4px 10px #2e0253;
+}
+
+
+.amPm {
+    font-size: 30px;
+    color: white;
+    padding-left: 10px;
+}
+
+.dot {
+    font-size: 50px;
+    padding: 15px;
+    color: white;
+
+}
+
+.a {
+    margin: 10px 0;
+    width: 265px;
+    padding: 0px 10px;
+    font-size: 50px;
+}
+
+.digic {
+    padding: 0px 10px;
+    margin-right: 160px;
+    font-size: 50px;
+}
+
+.clock {
+    background: linear-gradient(135deg, #360033, #0b8793);
+    padding: 70px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 5px 4px 10px #2e0253;
+}
+
+
+.bi-toggle-off {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 14px 0 0 35px;
+    font-size: 30px;
+    color: red;
+    cursor: pointer;
+}
+
+.bi-toggle-on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 15px 0 0 35px;
+    font-size: 30px;
+    color: green;
+    cursor: pointer;
+}
+
+.twelve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px 0 0 72px;
+    font-size: 35px;
+    color: white;
+}
+
+#sun {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    margin: 14px 15px 0px 0px;
+    font-size: 25px;
+    cursor: pointer;
+    color: black;
+
+}
+
+.tooltiptext {
+    position: absolute;
+    display: inline;
+    top: 0;
+    right: 0;
+    margin: 14px 50px 9px 0;
+    visibility: hidden;
+    color: #fff;
+    width: 120px;
+    background-color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    z-index: 100;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    /* To the right of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+
+.toggle,
+.formatStatus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive CSS starts */
+@media only screen and (max-width: 700px) and (min-width : 100px) {
+    html body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        background: linear-gradient(120deg, #2e0253, #0b8793);
+        background-repeat: no-repeat;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .n {
+        padding: 10%;
+        font-size: 50px;
+    }
+
+    .box {
+        max-width: 100%;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .container2 {
+        max-width: 300%;
+    }
+
+    .clock {
+        max-width: 100%;
+    }
+
+    .amPm {
+        font-size: 20px;
+    }
+
+    .format {
+
+        max-width: 100%;
+    }
+
+    .d {
+        font-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 70%;
+    }
+
+    .a {
+        margin: 10px 0;
+        width: 125px;
+        padding: 0px 10px;
+        font-size: 20px;
+    }
+
+    .digic {
+        padding: 0px 10px;
+        margin-left: 0px;
+        width: 40%;
+        font-size: 20px;
+    }
+
+    .bi-toggle-off {
+        font-size: 25px;
+    }
+
+    .bi-toggle-on {
+        font-size: 25px;
+    }
+
+    .twelve {
+        font-size: 25px;
+        margin: 12px 0 0 72px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .digic {
+        width: 100%;
+    }
+
+    .d {
+        max-width: 80%;
+    }
+
+    .n {
+        font-size: 25px;
+    }
+
+    .amPm {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 557px) and (min-width: 281px) {
+    .digic {
+        width: 70%;
+    }
+
+    .n {
+        font-size: 30px;
+    }
+}
+
+/* Responsive CSS ends */
+
+/* Dark Mode Css starts */
+.bodyActive {
+    background: linear-gradient(-120deg, #2C3E50, #121212);
+}
+
+.clockActive {
+    background: black;
+    box-shadow: 0px 0px 9px white;
+}
+
+.formatActive {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 9px whitesmoke;
+}
